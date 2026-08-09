@@ -2,7 +2,7 @@
 title : "Setting up Amazon API Gateway"
 weight : 5
 chapter : false
-pre : " <b> 5.4.5 </b> "
+pre : " <b> 5.4.6 </b> "
 ---
 
 ### 1. Initializing Amazon API Gateway

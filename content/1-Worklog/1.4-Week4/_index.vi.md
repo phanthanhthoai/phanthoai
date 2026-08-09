@@ -6,29 +6,32 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-**Thời gian:** Từ ngày **13/07/2026** đến ngày **18/07/2026**
+**Thời gian:** 13/07/2026 - 19/07/2026
 
-### Mục tiêu Tuần 4:
+### Mục tiêu tuần
 
-* Phát triển luồng xử lý tài liệu bằng Amazon Textract cho cả ảnh và PDF.
-* Chuẩn hóa các block và ghép văn bản thành nội dung hoàn chỉnh.
-* Tổng hợp kiến thức đã thực hành thành bài viết kỹ thuật.
+- Khởi tạo và cấu hình Amazon RDS PostgreSQL cho dự án.
+- Kích hoạt extension `pgvector` để hỗ trợ lưu trữ và tìm kiếm vector.
+- Xây dựng các bảng `documents` và `document_chunks`.
+- Khởi tạo Amazon DynamoDB để lưu trữ lịch sử trò chuyện.
+- Thiết kế Partition Key và Sort Key phục vụ truy vấn dữ liệu.
+- Cấu hình VPC, Subnet và Security Group để bảo vệ cơ sở dữ liệu.
 
-### Các công việc cần triển khai trong tuần này:
+### Nhật ký công việc
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|---|---|---|---|---|
-| 2 | - Phân tích các block PAGE, LINE, WORD, Geometry và mối quan hệ trong kết quả Textract<br>- Xác định những trường dữ liệu cần giữ lại để truy vết nội dung | 13/07/2026 | 13/07/2026 | [Textract Response Objects](https://docs.aws.amazon.com/textract/latest/dg/how-it-works-document-layout.html) |
-| 3 | - Viết logic lọc block LINE, nhóm kết quả theo từng trang và loại bỏ dữ liệu không cần thiết<br>- Thử nghiệm với tài liệu có nhiều đoạn văn bản | 14/07/2026 | 14/07/2026 | |
-| 4 | - Sắp xếp các dòng dựa trên vị trí Geometry trước khi ghép<br>- Chuẩn hóa khoảng trắng, ký tự xuống dòng và nội dung tiếng Việt sau OCR | 15/07/2026 | 15/07/2026 | |
-| 5 | - Nghiên cứu quy trình Textract bất đồng bộ cho PDF nhiều trang<br>- Tìm hiểu StartDocumentTextDetection, JobId và GetDocumentTextDetection | 16/07/2026 | 16/07/2026 | [Asynchronous Operations](https://docs.aws.amazon.com/textract/latest/dg/async.html) |
-| 6 | - Chuẩn hóa kết quả thành JSON gồm document ID, page number và nội dung văn bản<br>- Lưu dữ liệu đã xử lý vào S3 output để các thành phần tiếp theo sử dụng | 17/07/2026 | 17/07/2026 | |
-| 7 | - Viết bài “Tự động hóa trích xuất tài liệu bằng Amazon Textract và Serverless” | 18/07/2026 | | |
+| Ngày | Công việc thực hiện | Kết quả | Nguồn tài liệu / Workshop |
+|---|---|---|---|
+| 13/07/2026 | Khởi tạo Amazon RDS PostgreSQL phục vụ lưu trữ dữ liệu tài liệu và vector embedding. | Tạo được database PostgreSQL phục vụ Capstone Project. | [Workshop 5.4.4 - Amazon RDS PostgreSQL và pgvector](/vi/5-workshop/5.4-backend-deployment/5.4.4-creating-amazon-rds-pgvector/) |
+| 14/07/2026 | Cấu hình VPC, Private Subnet và Security Group cho Amazon RDS. | Thiết lập được môi trường mạng và giới hạn quyền truy cập đến database. | [Workshop 5.4.4 - Cấu hình mạng cho Amazon RDS](/vi/5-workshop/5.4-backend-deployment/5.4.4-creating-amazon-rds-pgvector/) |
+| 15/07/2026 | Kích hoạt extension `pgvector` trên PostgreSQL. | PostgreSQL hỗ trợ lưu trữ và thực hiện tìm kiếm trên dữ liệu vector. | [Workshop 5.4.4 - Kích hoạt pgvector](/vi/5-workshop/5.4-backend-deployment/5.4.4-creating-amazon-rds-pgvector/) |
+| 16/07/2026 | Tạo các bảng `documents` và `document_chunks` phục vụ lưu trữ dữ liệu tài liệu. | Hoàn thành cấu trúc cơ sở dữ liệu phục vụ lưu nội dung và vector embedding. | [Workshop 5.4.4 - Amazon RDS PostgreSQL và pgvector](/vi/5-workshop/5.4-backend-deployment/5.4.4-creating-amazon-rds-pgvector/) |
+| 17/07/2026 | Khởi tạo bảng DynamoDB `ChatHistory-dev`. | Có nơi lưu trữ dữ liệu lịch sử trò chuyện của người dùng. | [Workshop 5.4.2 - Amazon DynamoDB](/vi/5-workshop/5.4-backend-deployment/5.4.2-creating-amazon-dynamodb/) |
+| 18/07/2026 | Cấu hình Partition Key, Sort Key và thêm dữ liệu mẫu để kiểm tra cấu trúc bảng. | Có thể lưu và truy vấn tin nhắn theo phiên trò chuyện. | [Workshop 5.4.2 - Thiết kế bảng ChatHistory-dev](/vi/5-workshop/5.4-backend-deployment/5.4.2-creating-amazon-dynamodb/) |
 
-### Kết quả đạt được tuần 4:
+### Tổng kết tuần
 
-* Trích xuất và ghép nội dung văn bản theo đúng thứ tự tương đối.
-* Giữ lại page number để truy vết nguồn tài liệu.
-* Chuẩn hóa dữ liệu JSON thống nhất với nhóm.
-* Hoàn thiện thiết kế xử lý ảnh và PDF nhiều trang.
-* Hoàn thành bài blog kỹ thuật về Amazon Textract.
+- Khởi tạo thành công Amazon RDS PostgreSQL và Amazon DynamoDB.
+- Cấu hình VPC, Subnet và Security Group cho cơ sở dữ liệu.
+- Kích hoạt extension `pgvector` trên PostgreSQL.
+- Hoàn thành cấu trúc dữ liệu phục vụ lưu trữ tài liệu, vector embedding và lịch sử trò chuyện.
+- Chuẩn bị cơ sở dữ liệu để các AWS Lambda Function có thể kết nối và xử lý dữ liệu trong giai đoạn tiếp theo.

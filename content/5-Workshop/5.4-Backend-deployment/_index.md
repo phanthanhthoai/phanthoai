@@ -25,5 +25,6 @@ In this section, the team will deploy the entire backend processing system and s
 2. [Creating Amazon DynamoDB](5.4.2-creating-amazon-dynamoDB/)
 3. [Create Amazon S3 for raw document storage](5.4.3-creating-amazon-S3-for-document-storage/)
 4. [Initialize Amazon RDS PostgreSQL & pgvector](5.4.4-creating-amazon-rds-pgvector/)
-5. [Set up Amazon API Gateway](5.4.5-creating-API-gateway/)
-6. [Integrate API Gateway with the frontend (AWS Amplify)](5.4.6-integrating-api-gateway-frontend/)
+5. [Deploying AWS Lambda](5.4.5-deploying-aws-lambda/)
+6. [Set up Amazon API Gateway](5.4.6-creating-API-gateway/)
+7. [Integrate API Gateway with the frontend (AWS Amplify)](5.4.7-integrating-api-gateway-frontend/) 

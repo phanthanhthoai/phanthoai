@@ -26,5 +26,6 @@ Trong phần này, nhóm sẽ thực hiện triển khai toàn bộ hệ thống
 2. [Khởi tạo Amazon DynamoDB](5.4.2-creating-amazon-dynamoDB/)
 3. [Tạo Amazon S3 lưu trữ tài liệu thô](5.4.3-creating-amazon-S3-for-document-storage/)
 4. [Khởi tạo Amazon RDS PostgreSQL & pgvector](5.4.4-creating-amazon-rds-pgvector/)
-5. [Thiết lập Amazon API Gateway](5.4.5-creating-API-gateway/)
-6. [Tích hợp API Gateway vào Frontend (AWS Amplify)](5.4.6-integrating-api-gateway-frontend/)
+5. [Triển khai Lambda](5.4.5-deploying-aws-lambda/)
+6. [Thiết lập Amazon API Gateway](5.4.6-creating-API-gateway/)
+7. [Tích hợp API Gateway vào Frontend (AWS Amplify)](5.4.7-integrating-api-gateway-frontend/)

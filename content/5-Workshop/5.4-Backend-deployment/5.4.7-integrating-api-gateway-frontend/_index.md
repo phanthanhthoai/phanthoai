@@ -2,7 +2,7 @@
 title : "Integrating API Gateway and Frontend"
 weight : 6
 chapter : false
-pre : " <b> 5.4.6 </b> "
+pre : " <b> 5.4.7 </b> "
 ---
 
 ### 1. Building the Frontend Interface (React App)

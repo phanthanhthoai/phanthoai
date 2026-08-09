@@ -1,53 +1,37 @@
 ---
-title: "Week 1 Worklog"
-date: 2024-01-01
+title: "Worklog Week 1"
+date: 2026-08-08
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Week 1 Objectives:
+## WEEK 1: AWS OVERVIEW
 
-* Connect and become acquainted with members of the First Cloud AI Journey program.
-* Understand foundational AWS services and learn how to use the AWS Management Console and AWS CLI.
+**Duration:** June 22, 2026 – June 28, 2026
 
-### Tasks for This Week:
+### Weekly Objectives
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-|---|---|---|---|---|
-| 2 | - Become acquainted with FCAJ members<br>- Read and take note of the internship organization's rules and regulations | 22/08/2026 | 22/08/2026 | |
-| 3 | - Learn about AWS and its service categories:<br>  * Compute<br>  * Storage<br>  * Networking<br>  * Database<br>  * ... | 23/08/2026 | 23/08/2026 | [Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 4 | - Create an AWS Free Tier account<br>- Learn about the AWS Management Console and AWS CLI<br>**Hands-on practice:**<br>- Create an AWS account<br>- Install and configure the AWS CLI<br>- Learn how to use the AWS CLI | 24/08/2026 | 24/08/2026 | [Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 5 | - Learn Amazon EC2 fundamentals: instance types, AMIs, EBS, and more<br>- Explore methods for connecting to EC2 instances via SSH<br>- Learn about Elastic IP addresses | 25/08/2026 | 25/08/2026 | [Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 6 | **Hands-on practice:**<br>- Launch an EC2 instance<br>- Connect via SSH<br>- Attach an EBS volume | 26/08/2026 | 26/08/2026 | [Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+- Understand the concept of Cloud Computing and the role of AWS.
+- Grasp the AWS Global Infrastructure structure, including Regions, Availability Zones, and Edge Locations.
+- Learn how to create, configure, and secure an AWS account.
+- Distinguish between Root accounts, IAM Users, IAM Groups, IAM Roles, and IAM Policies.
+- Learn how to use AWS Free Tier, Cost Explorer, and AWS Budgets to manage costs.
 
-### Week 1 Achievements:
+### Work Log
 
-* Understood what AWS is and became familiar with its foundational service categories:
-  * Compute
-  * Storage
-  * Networking
-  * Database
-  * ...
+| Date | Tasks Performed | Outcome | Resources / Workshop |
+|---|---|---|---|
+| June 22, 2026 | Attended the introduction to the AWS First Cloud AI Journey Bootcamp 2026; reviewed program objectives, content, and requirements. | Understood the learning roadmap and Capstone Project requirements. | AWS First Cloud AI Journey Bootcamp 2026 Materials |
+| June 23, 2026 | Explored Cloud Computing, its history, and the benefits of AWS. | Understood the concept of cloud computing and the AWS service delivery model. | [AWS Cloud Computing](https://aws.amazon.com/what-is-cloud-computing/) |
+| June 24, 2026 | Studied AWS Regions, Availability Zones, and Edge Locations. | Understood how AWS builds scalable and highly available infrastructure. | [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/) |
+| June 25, 2026 | Created and configured an AWS account; learned about Root accounts and IAM Users. | Access the AWS Management Console and distinguish between the Root user and IAM users. | [AWS Account Management](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html) • [Workshop 5.2.2 - AWS Account Setup](/vi/5-workshop/5.2-prerequisite/) |
+| 26/06/2026 | Set up MFA; learn about IAM Groups, Roles, and Policies. | Enhance account security and understand AWS permission mechanisms. | [AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) • [Workshop 5.2.3 - IAM](/vi/5-workshop/5.2-prerequisite/) |
+| 27/06/2026 | Learn about AWS Free Tier, AWS Credits, Cost Explorer, and AWS Budgets. | Know how to monitor costs and set up budget alerts. | [AWS Free Tier](https://aws.amazon.com/free/) • [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) • [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
 
-* Successfully created and configured an AWS Free Tier account.
+### Weekly Summary
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services through the web interface.
-
-* Installed and configured the AWS CLI on a computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used the AWS CLI to perform basic operations such as:
-
-  * Checking account and configuration information
-  * Retrieving the list of AWS Regions
-  * Viewing EC2 resources
-  * Creating and managing key pairs
-  * Checking information about running services
-  * ...
-
-* Learned to use the web interface and CLI together to manage AWS resources.
-* ...
+- Gained an overview of AWS and its global infrastructure.
+- Completed account configuration and MFA security setup.
+- Learned how to track and control AWS costs.
+- Grasped fundamental IAM concepts in preparation for deploying AWS services in the Capstone Project.

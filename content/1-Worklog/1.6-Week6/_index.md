@@ -1,57 +1,40 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-08-08
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+**Period:** July 27, 2026 – August 2, 2026
 
-### Week 6 Objectives:
+### Weekly Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand the concepts of Generative AI, Large Language Models, Embeddings, and Retrieval-Augmented Generation (RAG).
+- Understand the role of Amazon Textract in the system's document processing workflow.
+- Use Amazon Bedrock to generate vector embeddings from text content.
+- Store vector embeddings in Amazon RDS PostgreSQL using `pgvector`.
+- Implement semantic search functionality to retrieve relevant document segments.
+- Generate test data to evaluate the performance of Amazon RDS and Amazon DynamoDB.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Work Log
 
+| Date | Tasks Performed | Results | Resources / Workshop |
+|---|---|---|---|
+| July 27, 2026 | Studied Generative AI, Large Language Models, and the Retrieval-Augmented Generation (RAG) architecture. | Understood the processing flow: from user query to embedding generation, retrieval of relevant content, and answer generation. | [Workshop 5.4.5.4 - Lambda Chatbot RAG](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/5.4.5.4-chatbot-rag/) |
+| July 28, 2026 | Studied Amazon Textract and its role in the document content extraction process. | Understood how document content can be converted into text data for further processing within the RAG pipeline. | ​​AWS Documentation - Amazon Textract |
+| July 29, 2026 | Selected the `amazon.titan-embed-text-v2:0` model on Amazon Bedrock to generate vector embeddings. | Determine the system's embedding model with a 1,024-dimensional vector size. | [Workshop 5.4.5.3 - Vector Embedding Generation Lambda](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/5.4.5.3-vector-lambda/) |
+| 30/07/2026 | Build a Lambda function to generate embedding vectors and store them in Amazon RDS PostgreSQL. | Text is converted into 1,024-dimensional vectors and stored in the `document_chunks` table. | [Workshop 5.4.5.3 - Vector Embedding Generation Lambda](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/5.4.5.3-vector-lambda/) • [Workshop 5.4.5.2 - Amazon RDS Connection Lambda](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/5.4.5.2-rds-lambda/) |
+| 31/07/2026 | Implement vector search functionality in PostgreSQL using cosine distance. | Enables searching for document chunks with vectors closest to the query vector. | [Workshop 5.4.5.2 - Amazon RDS Connection Lambda](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/5.4.5.2-rds-lambda/) |
+| 01/08/2026 | Generate and populate Amazon RDS with 2,000 test data vectors. | Establishes a dataset large enough to test vector search functionality and measure query latency. | [Workshop 5.5 - System Testing](/vi/5-workshop/5.5-system-testing/) |
+| 02/08/2026 | Create 100 test chat sessions in Amazon DynamoDB, each consisting of 20 messages. | Preparing data for testing chat history query capabilities. | [Workshop 5.5 - System Testing](/vi/5-workshop/5.5-system-testing/) |
 
-### Week 6 Achievements:
+### Weekly Summary
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Understood the operating principles of the RAG architecture.
+- Selected and utilized Amazon Titan Text Embeddings V2 to generate vector embeddings.
+- Completed the workflow for generating and storing 1,024-dimensional vectors in Amazon RDS PostgreSQL.
+- Implemented semantic search functionality using `pgvector`.
+- Prepared 2,000 test vectors in RDS.
+- Prepared 100 chat sessions, each consisting of 20 messages, in DynamoDB.
+- Finalized input data for performance benchmarking in the upcoming week.

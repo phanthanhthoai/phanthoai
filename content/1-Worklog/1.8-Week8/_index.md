@@ -1,57 +1,42 @@
 ---
-title: "Week 8 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 8"
+date: 2026-08-08
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+**Timeframe:** 10/08/2026 - 15/08/2026
 
-### Week 8 Objectives:
+### Phase Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Review key system components.
+- Audit IAM Roles, Policies, Security Groups, and security configurations.
+- Check costs and clean up unused AWS resources.
+- Consolidate architecture details, deployment processes, and test results.
+- Finalize the bilingual report website using Hugo.
+- Prepare report content, presentation materials, and final deliverables.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Work Log and Completion Plan
 
+| Date | Tasks Performed / Plan | Results / Objectives | Documentation / Workshop |
+|---|---|---|---|
+| 10/08/2026 | Review Workshop structure, Worklog, and deployed AWS components; continue finalizing AWS Lambda documentation. | Synchronize Worklog content with actual Workshop deployments and add links to facilitate reviewer verification. | [Workshop 5.4.5 - Deploying AWS Lambda](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/) |
+| 11/08/2026 | **Plan:** Review IAM Roles, Policies, VPCs, Security Groups, and Environment Variables for Lambda Functions. | Ensure access permissions and network configurations are appropriate for each function. | [Workshop 5.4.5.1 - AWS Lambda General Configuration](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/5.4.5.1-lambda-general-configuration/) |
+| 12/08/2026 | **Plan:** Check AWS resource costs using Cost Explorer and AWS Budgets; review unused resources. | Minimize unnecessary costs and prepare the environment for post-Capstone Project completion. | AWS Cost Explorer • AWS Budgets |
+| 13/08/2026 | **Plan:** Consolidate architecture, AWS service configurations, and system testing results. | Finalize technical content for the Workshop and the final report. | [Workshop 5.1 - System Overview](/vi/5-workshop/5.1-workshop-overview/) • [Workshop 5.5 - System Testing](/vi/5-workshop/5.5-system-testing/) |
+| 14/08/2026 | **Plan:** Finalize the bilingual report website using Hugo; verify links between the Worklog and Workshops. | Complete the Worklog, Proposal, and Workshop sections, as well as the English/Vietnamese versions. | Hugo report website |
+| 15/08/2026 | **Plan:** Review the entire report, prepare presentation content, and summarize the program. | Finalize the product and the final report. | Capstone Project Report |
 
-### Week 8 Achievements:
+### Phase Summary
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+The final phase focuses on reviewing and finalizing the entire product following the learning and implementation process.
 
-* Successfully created and configured an AWS Free Tier account.
+Key activities include:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Reviewing configurations and access permissions for AWS services.
+- Consolidating implementation results for Amazon RDS, DynamoDB, Lambda, Bedrock, and Cognito.
+- Reviewing testing results and performance metrics.
+- Finalizing Workshops and linking practical content to the Worklog.
+- Finalizing the bilingual report website using Hugo.
+- Preparing the final report and presentation content. > **Objective:** Complete the Capstone Project and report documentation before the program concludes on August 15, 2026.

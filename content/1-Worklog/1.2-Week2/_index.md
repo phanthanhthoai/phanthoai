@@ -1,57 +1,36 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-08-08
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+**Timeframe:** 29/06/2026 - 05/07/2026
 
-### Week 2 Objectives:
+### Weekly Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand the functions of AWS Compute, Storage, and Networking service groups.
+- Distinguish between the use cases for Amazon EC2, AWS Lambda, Amazon ECS, and Amazon EKS.
+- Distinguish between Amazon S3, Amazon EBS, and Amazon S3 Glacier.
+- Understand basic Amazon VPC components such as Subnets, Route Tables, and Security Groups.
+- Learn to select the appropriate AWS service for specific system requirements.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Worklog
 
+| Date | Tasks Performed | Results | Resources / Workshop |
+|---|---|---|---|
+| 29/06/2026 | Explored Amazon EC2 and the virtual server model on AWS. | Understood how to launch and manage EC2 instances and grasped the virtual server-based computing model. | AWS Documentation - Amazon EC2 |
+| 30/06/2026 | Explored AWS Lambda and Serverless architecture. | Distinguished between traditional server models and Serverless; understood AWS Lambda use cases. | AWS Documentation - AWS Lambda • [Workshop 5.4.5 - Deploying AWS Lambda](/vi/5-workshop/5.4-backend-deployment/5.4.5-deploying-aws-lambda/) |
+| 01/07/2026 | Gained an overview of Amazon ECS and Amazon EKS. | Understood the fundamental roles of containers and container orchestration on AWS. | AWS Documentation - Amazon ECS, Amazon EKS |
+| 02/07/2026 | Explored Amazon S3, Amazon EBS, and Amazon S3 Glacier. | Distinguished between Object Storage, Block Storage, and Archive Storage. | AWS Documentation - Amazon S3, Amazon EBS, Amazon S3 Glacier |
+| 03/07/2026 | Hands-on practice creating an Amazon S3 bucket, and uploading and managing objects. | Learn how to create a bucket, upload data, and manage objects on Amazon S3. | [Workshop 5.4.3 - Amazon S3 for document storage](/vi/5-workshop/5.4-backend-deployment/5.4.3-creating-amazon-s3-for-document/) |
+| 04/07/2026 | Explore Amazon VPC, Subnets, Route Tables, Security Groups, Amazon CloudFront, and Amazon Route 53. | Understand fundamental AWS networking components and their roles in connecting and securing resources. | AWS Documentation - Amazon VPC • [Workshop 5.4.4 - Amazon RDS PostgreSQL and pgvector](/vi/5-workshop/5.4-backend-deployment/5.4.4-creating-amazon-rds-pgvector/) |
 
-### Week 2 Achievements:
+### Weekly Summary
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Distinguish between AWS service categories: Compute, Storage, and Networking.
+- Understand the fundamental differences between Amazon EC2 and AWS Lambda.
+- Gain hands-on experience creating and managing data on Amazon S3.
+- Grasp the roles of Amazon VPC, Subnets, and Security Groups.
+- Acquire the foundational knowledge needed to select appropriate AWS services for the Capstone Project architecture.
