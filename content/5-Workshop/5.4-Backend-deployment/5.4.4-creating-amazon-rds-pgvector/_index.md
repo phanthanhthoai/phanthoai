@@ -8,12 +8,12 @@ pre: "<b> 5.4.4 </b>"
 ## Initialize RDS PostgreSQL
 
 1. Open the Amazon RDS Console.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/rds.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/rds.png)
 2. Select **Create database**.
 3. Select PostgreSQL, Full configuration method, Dev/Test template.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/rds2.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/rds2.png)
 4. Choose the appropriate configuration for the environment.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/3.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/3.png)
 5. Configuration
 ```text
 Engine version = PostgreSQL 16.14-R2
@@ -24,15 +24,15 @@ Database authentication = Password authentication
 Instance type = db.t4g.micro
 Storage type = General Purpose SSD (gp3)
 ```
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/4.png)
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/5.png)
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/6.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/4.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/5.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/6.png)
 
 6. Select the created VPC, DB Subnet Group and Security Group.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/7.png)
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/8.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/7.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/8.png)
 7. Create database and wait for **Available** status.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/9.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/9.png)
 
 ## Lambda initializes database, activates pgvector
 
@@ -151,4 +151,4 @@ def create_database_objects(cursor: Any) -> None:
     )
 ```
 3. Commit transaction results.
-![pgvector enabled](/images/5-Workshop/5.4-Backend-Deployment/10.png)
+![pgvector enabled](/images/5-Workshop/5.4-Backend-deployment/10.png)

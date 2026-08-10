@@ -8,12 +8,12 @@ pre: "<b> 5.4.4 </b>"
 ## Khởi tạo RDS PostgreSQL
 
 1. Mở Amazon RDS Console.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/rds.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/rds.png)
 2. Chọn **Create database**.
 3. Chọn PostgreSQL, Phương thức Full configration, mẫu Dev/Test.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/rds2.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/rds2.png)
 4. Chọn cấu hình phù hợp với môi trường.
-![RDS Available](/images/5-Workshop/5.4-Backend-Deployment/3.png)
+![RDS Available](/images/5-Workshop/5.4-Backend-deployment/3.png)
 5. Cấu hình
 ```text
 Engine version = PostgreSQL 16.14-R2
