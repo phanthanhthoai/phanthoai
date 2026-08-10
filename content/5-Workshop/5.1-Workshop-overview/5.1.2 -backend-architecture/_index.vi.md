@@ -12,7 +12,7 @@ Hệ thống backend không sử dụng kiến trúc nguyên khối (Monolithic)
 
 #### 1.1. Cấu trúc tổng quan
 
-![](/images/5-Workshop/5.1-Workshop-overview/ImageFunction.png)
+![](/phanthoai/images/5-Workshop/5.1-Workshop-overview/ImageFunction.png)
 ---
 
 #### 1.2. Giải thích chi tiết từng hàm

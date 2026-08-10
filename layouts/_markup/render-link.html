@@ -1,0 +1,11 @@
+{{- $href := .Destination -}}
+
+{{- if strings.HasPrefix $href "/" -}}
+  {{- $href = strings.TrimPrefix "/" $href -}}
+  {{- $href = $href | relURL -}}
+{{- end -}}
+
+<a href="{{ $href | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}>
+  {{- with .Text }}{{ . }}{{ end -}}
+</a>

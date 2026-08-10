@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Vector Embedding Generation Lambda"
 weight: 3
 chapter: false
 pre: "<b>5.4.5.3. </b>"

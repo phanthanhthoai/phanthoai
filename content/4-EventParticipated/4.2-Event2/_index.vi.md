@@ -81,17 +81,17 @@ Nội dung về Frontier Agent cũng mở rộng góc nhìn của em về vai tr
 ### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
 
 <figure>
-  <img src="/images/event2_image1.jpeg" alt="Phần thi đấu Cloud Architect giữa hai đội tại văn phòng AWS" style="width: 100%; height: auto;">
+  <img src="/phanthoai/images/event2_image1.jpeg" alt="Phần thi đấu Cloud Architect giữa hai đội tại văn phòng AWS" style="width: 100%; height: auto;">
   <figcaption>Phần thi đấu Cloud Architect giữa hai đội KLKAT và Ngũ Đại Hiệp.</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/event2_image3.jpeg" alt="Phần trình bày Meet the Frontier Agent tại sự kiện" style="width: 100%; height: auto;">
+  <img src="/phanthoai/images/event2_image3.jpeg" alt="Phần trình bày Meet the Frontier Agent tại sự kiện" style="width: 100%; height: auto;">
   <figcaption>Phần giới thiệu “Meet the Frontier Agent” và ứng dụng AI agent trong bảo mật.</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/event2_image2.jpeg" alt="Ảnh tập thể tại sự kiện Cloud Architect x Meet up 11/07" style="width: 100%; height: auto;">
+  <img src="/phanthoai/images/event2_image2.jpeg" alt="Ảnh tập thể tại sự kiện Cloud Architect x Meet up 11/07" style="width: 100%; height: auto;">
   <figcaption>Ảnh lưu niệm của người tham dự và ban tổ chức tại văn phòng AWS.</figcaption>
 </figure>
 

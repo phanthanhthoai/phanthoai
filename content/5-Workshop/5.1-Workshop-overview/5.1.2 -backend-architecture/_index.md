@@ -12,7 +12,7 @@ The backend system does not utilize a monolithic architecture; instead, it adopt
 
 #### 1.1. Overall Structure
 
-![](/images/5-Workshop/5.1-Workshop-overview/ImageFunction.png)
+![](/phanthoai/images/5-Workshop/5.1-Workshop-overview/ImageFunction.png)
 ---
 
 #### 1.2. Detailed Function Explanation

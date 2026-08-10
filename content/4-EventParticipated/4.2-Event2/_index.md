@@ -81,17 +81,17 @@ The Frontier Agent session also broadened my understanding of AI's role in secur
 ### Event Photos
 
 <figure>
-  <img src="/images/event2_image1.jpeg" alt="Cloud Architect competition between two teams at the AWS office" style="width: 100%; height: auto;">
+  <img src="/phanthoai/images/event2_image1.jpeg" alt="Cloud Architect competition between two teams at the AWS office" style="width: 100%; height: auto;">
   <figcaption>The Cloud Architect competition between KLKAT and Ngũ Đại Hiệp.</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/event2_image3.jpeg" alt="Meet the Frontier Agent presentation at the event" style="width: 100%; height: auto;">
+ <img src="/phanthoai/images/event2_image3.jpeg" alt="Meet the Frontier Agent presentation at the event" style="width: 100%; height: auto;">
   <figcaption>The “Meet the Frontier Agent” presentation and the use of AI agents in cybersecurity.</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/event2_image2.jpeg" alt="Group photo at Cloud Architect x Meet up 11/07" style="width: 100%; height: auto;">
+ <img src="/phanthoai/images/event2_image2.jpeg" alt="Group photo at Cloud Architect x Meet up 11/07" style="width: 100%; height: auto;">
   <figcaption>A group photo of attendees and organizers at the AWS office.</figcaption>
 </figure>
 
